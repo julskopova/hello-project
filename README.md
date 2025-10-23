@@ -31,11 +31,12 @@
 
 powershell:
 
-*docker run --name postgres-demo `\
-  -e POSTGRES_PASSWORD=heslo123 `\
-  -e POSTGRES_DB=appdb `\
-  -p 5432:5432 `\
-  -d postgres:16*
+docker run --name postgres-demo `
+  -e POSTGRES_PASSWORD=heslo123 `
+  -e POSTGRES_DB=appdb `
+  -p 5432:5432 `
+  -d postgres:16
+
 
 Zkontroluj, že databáze běží:
 
