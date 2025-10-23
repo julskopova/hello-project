@@ -28,6 +28,7 @@
 
 **1. Spuštění PostgreSQL v Dockeru**
 
+
 powershell:
 
 *docker run --name postgres-demo `
@@ -42,6 +43,7 @@ Zkontroluj, že databáze běží:
 
 **2. Spusť aplikaci**
 
+
 V kořenovém adresáři projektu spusť:
 
    *.\gradlew.bat bootRun*
@@ -52,6 +54,7 @@ Aplikace se spustí na adrese:
 
 **3. Vyzkoušej endpoint**
 
+
 Otevři prohlížeš nebo v konzoli:
 
 powershell
@@ -60,7 +63,8 @@ powershell
 
 Zobrazí se seznam poznámek uložených v databázi.
 
-**Konfigurace připojení**
+**4.Konfigurace připojení**
+
 
 Aplikace používá výchozí konfiguraci v application.properties:
 
@@ -72,7 +76,8 @@ spring.jpa.hibernate.ddl-auto=update
 spring.jpa.show-sql=true
 spring.jpa.properties.hibernate.format_sql=true*
 
-**Struktura projektu**
+**5.Struktura projektu**
+
 
 *src/main/kotlin/com/example/helloproject/
   note/
@@ -80,7 +85,8 @@ spring.jpa.properties.hibernate.format_sql=true*
     NoteRepository.kt    # JPA repozitář pro CRUD operace
     NoteController.kt    # REST controller - endpoint /notes*
 
-**Zastavení databáze**
+**6.Zastavení databáze**
+
 
    *docker stop postgres-demo
    docker rm postgres-demo*
