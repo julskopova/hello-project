@@ -27,6 +27,7 @@
 # Databáze
 
 **1. Spuštění PostgreSQL v Dockeru**
+
 powershell:
 *docker run --name postgres-demo `
    -e POSTGRES_PASSWORD=heslo123 `
