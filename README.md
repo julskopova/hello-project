@@ -26,7 +26,7 @@
 
 # Databáze
 
-** 1. Spuštění PostgreSQL v Dockeru**
+**1. Spuštění PostgreSQL v Dockeru**
 powershell:
 *docker run --name postgres-demo `
    -e POSTGRES_PASSWORD=heslo123 `
@@ -37,7 +37,8 @@ powershell:
 Zkontroluj, že databáze běží:
    *docker ps*
 
-**2. Spusť aplikaci
+**2. Spusť aplikaci**
+
 V kořenovém adresáři projektu spusť:
    *.\gradlew.bat bootRun*
 
